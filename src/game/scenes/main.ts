@@ -91,7 +91,6 @@ export class MainScene extends Phaser.Scene {
     else if (this.cursors.down.isDown) {
       this.player.SetInstruction({ action: 'walk', option: 'front' });
     }
-    console.log(this.player.body.velocity);
     this.player.update();
   }
 
