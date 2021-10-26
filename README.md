@@ -1,4 +1,4 @@
-# 📦 Phaser 3 Sample Game - Fire Shooter
+# 📦 Phaser 3 Sample Game - Walking Around
 
 Sensible webpack 5 boilerplate using Babel, PostCSS and Sass.
 
@@ -89,6 +89,7 @@ cd dist && http-server
 - [`prettier`](https://github.com/prettier/prettier) - Dependency for `prettier-webpack-plugin` plugin
 
 ## Author
+
 - [Giang Dao](https://github.com/truonggiangdao)
 - Webpack 5 Boilerplate from [Tania Rascia](https://github.com/taniarascia/webpack-boilerplate)
 
