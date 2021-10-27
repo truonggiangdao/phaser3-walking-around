@@ -14,7 +14,7 @@ export const ground = {
 
 export const block = {
   name: 'block',
-  src: 'images/block-red.png',
+  src: 'images/block.png',
   width: 50,
   height: 50,
 };

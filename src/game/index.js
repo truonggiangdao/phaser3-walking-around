@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import { MainScene } from './scenes/main';
-import { Dimention, Gravity } from './config';
-// import { RpgCharacter } from './plugins/rpgCharactor';
+import { Dimention } from './config';
+import VirtualJoystickPlugin from 'phaser3-rex-plugins/plugins/virtualjoystick-plugin';
 
 const { width, height } = Dimention;
 
@@ -19,6 +19,15 @@ var config = {
       gravity: { y: 0 },
       debug: false,
     },
+  },
+  plugins: {
+    global: [
+      {
+        key: 'rexVirtualJoystick',
+        plugin: VirtualJoystickPlugin,
+        start: true,
+      },
+    ],
   },
   scene: MainScene,
 };
