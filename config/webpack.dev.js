@@ -1,8 +1,8 @@
-const webpack = require('webpack')
-const { merge } = require('webpack-merge')
+const webpack = require('webpack');
+const { merge } = require('webpack-merge');
 
-const common = require('./webpack.common.js')
-const paths = require('./paths')
+const common = require('./webpack.common.js');
+const paths = require('./paths');
 
 module.exports = merge(common, {
   // Set the mode to development or production
@@ -17,6 +17,7 @@ module.exports = merge(common, {
     static: paths.public,
     open: true,
     compress: true,
+    liveReload: true,
     hot: true,
     port: 8080,
   },
@@ -43,4 +44,4 @@ module.exports = merge(common, {
     // Only update what has changed on hot reload
     new webpack.HotModuleReplacementPlugin(),
   ],
-})
+});
