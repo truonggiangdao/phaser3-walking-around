@@ -66,6 +66,26 @@ export class RpgCharacter extends Phaser.GameObjects.Sprite {
     this.instructions.push(instruction);
   }
 
+  Move(direction) {
+    this.SetInstruction({ action: 'walk', option: direction });
+  }
+
+  MoveLeft() {
+    this.Move('left');
+  }
+
+  MoveRight() {
+    this.Move('right');
+  }
+
+  MoveUp() {
+    this.Move('back');
+  }
+
+  MoveDown() {
+    this.Move('front');
+  }
+
   /**
    * Process the current instruction stack
    */
