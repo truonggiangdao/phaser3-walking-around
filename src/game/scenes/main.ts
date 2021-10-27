@@ -1,6 +1,5 @@
 import Phaser from 'phaser';
 import VirtualJoyStickPlugin from 'phaser3-rex-plugins/plugins/virtualjoystick-plugin';
-// import VirtualJoystick from 'phaser3-rex-plugins/plugins/virtualjoystick';
 import { bombSound, shootSound, entrySound, collectSound } from '../assets/audio';
 import { ground, background, block } from '../assets/images';
 import { char } from '../assets/sprites';
